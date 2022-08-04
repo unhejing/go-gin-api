@@ -1,0 +1,13 @@
+package encryptutil
+
+import (
+	"crypto/md5"
+	"encoding/hex"
+)
+
+// md5加密
+func Md5(str string) string {
+	m := md5.New()
+	m.Write([]byte(str))
+	return hex.EncodeToString(m.Sum(nil))
+}
