@@ -21,13 +21,13 @@ type Config struct {
 	MySQL struct {
 		Read struct {
 			Addr string `toml:"addr"`
-			User string `toml:"sys_user_dto"`
+			User string `toml:"user"`
 			Pass string `toml:"pass"`
 			Name string `toml:"name"`
 		} `toml:"read"`
 		Write struct {
 			Addr string `toml:"addr"`
-			User string `toml:"sys_user_dto"`
+			User string `toml:"user"`
 			Pass string `toml:"pass"`
 			Name string `toml:"name"`
 		} `toml:"write"`
@@ -50,7 +50,7 @@ type Config struct {
 	Mail struct {
 		Host string `toml:"host"`
 		Port int    `toml:"port"`
-		User string `toml:"sys_user_dto"`
+		User string `toml:"user"`
 		Pass string `toml:"pass"`
 		To   string `toml:"to"`
 	} `toml:"mail"`
